@@ -1,0 +1,5 @@
+自建接口地址：http://timemeetyou.com:8889/api/private/v1/
+默认用户名 admin 密码 123456
+正在学习中，项目示例地址http://gl.timemeetyou.com
+万一接口失效了或者用户被删了可以私我恢复数据库
+接口维护至2023年3月。
