@@ -7,13 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@vue/composition-api": "^1.0.0-rc.8",
     "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "element-ui": "^2.4.5",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-router": "^3.0.3",
+    "vue-table-with-tree-grid": "^0.2.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",

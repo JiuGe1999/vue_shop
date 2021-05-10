@@ -65,6 +65,8 @@
         <el-dialog title="分配权限" :visible.sync="setRightDialogVisible" 
         width="50%" @close="setRightDialogClosed">
             <!--树形控件-->
+            <!--props是配置选项，show-checkbox节点是否可被选择，node-key每个节点用来作为的唯一标识，default-expand-all默认展开所有节点，
+            default-check-keys默认勾选的节点-->
             <el-tree :data="rightslist" :props="treeProps" show-checkbox 
             node-key="id" default-expand-all :default-check-keys="defKeys" ref="treeRef"></el-tree>
             <span slot="footer" class="dialog-footer">
@@ -157,6 +159,8 @@ export default {
         //点击为角色分配权限
         async allotRights() {
             const keys = [
+                //getCheckedNodes若节点可被选择，则返回目前被选中的节点所组成的数组
+                //getHalfCheckedNodes若节点可被选择，则返回目前半选中的节点所组成的数组	
                 ...this.$refs.treeRef.getCheckedKeys(), 
                 ...this.$refs.treeRef.getHalfCheckedKeys()
             ]
